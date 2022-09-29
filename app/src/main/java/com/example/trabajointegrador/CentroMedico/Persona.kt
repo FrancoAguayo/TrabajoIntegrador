@@ -1,6 +1,6 @@
 package com.example.trabajointegrador.CentroMedico
 
-class Persona {
+open class Persona {
     var nombre: String=""
     var apellido: String=""
     var edad: Int=0
@@ -11,5 +11,12 @@ class Persona {
         this.apellido=apellido
         this.edad=edad
         this.dni=dni
+    }
+    open fun asistirAlCentro(){
+        println("La persona ${this.nombre} ${this.apellido} está asistiendo al centro médico.")
+    }
+    open fun tratamiento(){
+        println("La persona ${this.nombre} ${this.apellido} va a interactuar con respecto a un " +
+                "tratamiento.")
     }
 }

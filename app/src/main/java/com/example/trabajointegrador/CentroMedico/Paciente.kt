@@ -1,4 +1,5 @@
 package com.example.trabajointegrador.CentroMedico
 
-class Paciente {
+class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
+
 }
