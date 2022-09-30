@@ -20,6 +20,12 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         println("El paciente ${this.nombre} ${this.apellido} entró al centro médico.")
     }
 
+    override fun tratamiento() {
+        println("El paciente ${this.nombre} ${this.apellido} está recibiendo un tratamiento.")
+    }
+    override fun cirugia() {
+        println("El paciente ${this.nombre} ${this.apellido} va a tener una cirugía.")
+    }
     override fun toString(): String {
         return ("El paciente ${this.nombre} ${this.apellido} se encuentra atendido.")
     }

@@ -19,4 +19,7 @@ open class Persona {
         println("La persona ${this.nombre} ${this.apellido} va a interactuar con respecto a un " +
                 "tratamiento.")
     }
+    open fun cirugia(){
+        println("La persona ${this.nombre} ${this.apellido} se encuentra en medio de una cirugía.")
+    }
 }
