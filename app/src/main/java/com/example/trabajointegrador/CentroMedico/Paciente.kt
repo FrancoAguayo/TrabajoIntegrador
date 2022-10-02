@@ -4,6 +4,17 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     var peso: Double=0.0
     var altura: Double=0.0
     var diagnostico: String=""
+        get() {
+            return field.uppercase()
+        }
+        set(value) {
+            if(value=="apendicitis"){
+                urgencia(value)
+            }
+            else{
+                field = value
+            }
+        }
 
     constructor(nombre: String,apellido: String,edad: Int,dni: Int,peso: Double,altura: Double
     ,diagnostico: String): this (){
@@ -28,5 +39,8 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     }
     override fun toString(): String {
         return ("El paciente ${this.nombre} ${this.apellido} se encuentra atendido.")
+    }
+    fun urgencia(diagnostico: String){
+        println("Este paciente necesita operación inmediata.")
     }
 }
