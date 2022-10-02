@@ -42,6 +42,6 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         return ("El paciente ${this.nombre} ${this.apellido} se encuentra atendido.")
     }
     fun urgencia(diagnostico: String){
-        println("Este paciente necesita operación inmediata.")
+        println("Este paciente fue diagnosticado con $diagnostico necesita operación inmediata.")
     }
 }
