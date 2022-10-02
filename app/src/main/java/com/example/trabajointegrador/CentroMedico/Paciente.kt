@@ -10,6 +10,7 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         set(value) {
             if(value=="apendicitis"){
                 urgencia(value)
+                field = value
             }
             else{
                 field = value

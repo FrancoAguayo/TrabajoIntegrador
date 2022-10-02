@@ -17,6 +17,7 @@ fun main() {
     paciente1.altura=read.nextDouble()
     println("Ingresa el diagnóstico del paciente.")
     paciente1.diagnostico=read.next()
+    println("***********************************")
     println(paciente1.nombre)
     println(paciente1.apellido)
     println(paciente1.edad)
