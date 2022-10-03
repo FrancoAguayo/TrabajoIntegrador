@@ -3,6 +3,18 @@ package com.example.trabajointegrador.CentroMedico
 class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     var peso: Double=0.0
     var altura: Double=0.0
+        get() {
+            return field
+        }
+        set(value) {
+            if(value==70.0){
+                peso(value)
+                field = value
+            }
+            else{
+                field = value
+            }
+        }
     var diagnostico: String=""
         get() {
             return field.uppercase()
@@ -42,5 +54,8 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     }
     fun urgencia(diagnostico: String){
         println("Este paciente fue diagnosticado con $diagnostico. ¡Necesita operación inmediatamente!")
+    }
+    fun peso(peso: Double){
+        println("Este paciente se encuentra con sobrepeso. Hay que atenderlo cuidadosamente.")
     }
 }
