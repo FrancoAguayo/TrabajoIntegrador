@@ -31,7 +31,6 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     override fun asistirAlCentro() {
         println("El paciente ${this.nombre} ${this.apellido} entró al centro médico.")
     }
-
     override fun tratamiento() {
         println("El paciente ${this.nombre} ${this.apellido} está recibiendo un tratamiento.")
     }
@@ -42,6 +41,6 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         return ("El paciente ${this.nombre} ${this.apellido} se encuentra atendido.")
     }
     fun urgencia(diagnostico: String){
-        println("Este paciente fue diagnosticado con $diagnostico necesita operación inmediata.")
+        println("Este paciente fue diagnosticado con $diagnostico. ¡Necesita operación inmediatamente!")
     }
 }
