@@ -22,6 +22,7 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         set(value) {
             if(value=="apendicitis"){
                 urgencia(value)
+                cirugia()
                 field = value
             }
             else{
@@ -56,6 +57,6 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
         println("Este paciente fue diagnosticado con $diagnostico. ¡Necesita operación inmediatamente!")
     }
     fun peso(peso: Double){
-        println("Este paciente se encuentra con sobrepeso. Hay que atenderlo cuidadosamente.")
+        println("Este paciente se encuentra con sobrepeso de $peso. Hay que atenderlo cuidadosamente.")
     }
 }
