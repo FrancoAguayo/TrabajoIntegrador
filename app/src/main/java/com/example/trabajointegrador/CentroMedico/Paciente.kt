@@ -6,7 +6,7 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
             return field
         }
         set(value) {
-            if(value==70.0){
+            if(value>=70.0){
                 peso(value)
                 field = value
             }
