@@ -42,4 +42,6 @@ fun main() {
     cirujano1.edad=read.nextInt()
     println("Ingrese el dni del cirujano.")
     cirujano1.dni=read.nextInt()
+    println("Ingrese la operación a ejecutar del cirujano.")
+    cirujano1.operacion=read.next()
 }

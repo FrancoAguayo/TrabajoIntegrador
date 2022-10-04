@@ -2,7 +2,6 @@ package com.example.trabajointegrador.CentroMedico
 
 class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     var peso: Double=0.0
-    var altura: Double=0.0
         get() {
             return field
         }
@@ -15,6 +14,7 @@ class Paciente() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
                 field = value
             }
         }
+    var altura: Double=0.0
     var diagnostico: String=""
         get() {
             return field.uppercase()
