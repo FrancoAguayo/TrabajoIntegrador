@@ -12,7 +12,7 @@ class Tratamiento {
     }
 
     fun tratamiento(tipoTratamiento: String, duracion: Int){
-        println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento con duracion de $duracion meses.")
+        println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento con duracion de $duracion mes/es.")
     }
     fun tratamiento(tipoTratamiento: String,duracion: Int,requiereCirugia: Boolean){
         println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento que involucró una cirugía urgente la" +
@@ -20,6 +20,6 @@ class Tratamiento {
     }
     fun tratamiento(tipoTratamiento: String,duracion: Int,frecuenciaMedicacion: Int){
         println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento que involucra una medicación." +
-                "La medicacion se toma cada $frecuenciaMedicacion horas por $duracion meses.")
+                "La medicacion se toma cada $frecuenciaMedicacion horas por $duracion mes/es.")
     }
 }

@@ -50,7 +50,10 @@ fun main() {
     if(paciente1.diagnostico=="apendicitis"){
         tratamiento1.tratamiento("Repsoso",3,true)
     }
+    else if(paciente1.diagnostico=="bronquiolitis"){
+        tratamiento1.tratamiento("Farmacoterapia",2)
+    }
     else{
-        tratamiento1.tratamiento("Farmacoterapia",18)
+        tratamiento1.tratamiento("Quimioterapia",18)
     }
 }
