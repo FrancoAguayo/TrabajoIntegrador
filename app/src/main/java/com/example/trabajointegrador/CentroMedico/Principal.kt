@@ -6,8 +6,7 @@ fun main() {
     var medico1 = Medico("","",0,0,0,"")
     var cirujano1= Cirujano("","",0,0,"")
     var paciente2 = Paciente("Daniel","Hernandez",34,
-        45272572,56.8,1.54,"bronquiolitis")
-    var tratamiento1= Tratamiento(paciente1)
+        45272572,56.8,1.54,"Bronquiolitis")
     var tratamiento2= Tratamiento(paciente2)
     println("Ingresa el nombre del paciente.")
     paciente1.nombre=read.next()
@@ -55,11 +54,5 @@ fun main() {
     cirujano1.operacion=read.next()
     cirujano1.cirugia()
     println("************************************")
-    if(paciente1.diagnostico!="apendicitis"){
-        tratamiento1.tratamiento("Terapia Intesiva",6)
-    }
-    else{
-        tratamiento1.tratamiento("Reposo",3,"Apendicetomia")
-    }
-
+    tratamiento2.tratamiento("Terapia Intesiva",6)
 }
