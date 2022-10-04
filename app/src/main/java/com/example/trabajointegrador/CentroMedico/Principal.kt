@@ -10,6 +10,7 @@ fun main() {
     paciente1.nombre=read.next()
     println("Ingresa el apellido del paciente.")
     paciente1.apellido=read.next()
+    paciente1.asistirAlCentro()
     println("Ingresa la edad del paciente.")
     paciente1.edad=read.nextInt()
     println("Ingresa el dni del paciente.")
@@ -20,14 +21,14 @@ fun main() {
     paciente1.altura=read.nextDouble()
     println("Ingresa el diagnóstico del paciente.")
     paciente1.diagnostico=read.next()
-    println("***********************************")
-    paciente1.asistirAlCentro()
     println(paciente1)
     paciente1.tratamiento()
+    println("***********************************")
     println("Ingrese el nombre del médico.")
     medico1.nombre=read.next()
     println("Ingrese el apellido del médico.")
     medico1.apellido=read.next()
+    medico1.asistirAlCentro()
     println("Ingrese la edad del médico.")
     medico1.edad=read.nextInt()
     println("Ingrese el dni del médico.")
@@ -36,24 +37,21 @@ fun main() {
     medico1.aniosExperiencia=read.nextInt()
     println("Ingrese el doctorado del médico.")
     medico1.tipoDoctorado=read.next()
+    medico1.tratamiento()
     println("***********************************")
     println("Ingrese el nombre del cirujano.")
     cirujano1.nombre=read.next()
     println("Ingrese el apellido del cirujano.")
     cirujano1.apellido=read.next()
+    cirujano1.asistirAlCentro()
     println("Ingrese la edad del cirujano.")
     cirujano1.edad=read.nextInt()
     println("Ingrese el dni del cirujano.")
     cirujano1.dni=read.nextInt()
     println("Ingrese la operación a ejecutar del cirujano.")
     cirujano1.operacion=read.next()
+    cirujano1.cirugia()
     if(paciente1.diagnostico=="apendicitis"){
         tratamiento1.tratamiento("Repsoso",3,true)
-    }
-    else if(paciente1.diagnostico=="bronquiolitis"){
-        tratamiento1.tratamiento("Farmacoterapia",2)
-    }
-    else{
-        tratamiento1.tratamiento("Quimioterapia",18)
     }
 }

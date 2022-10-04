@@ -15,6 +15,6 @@ class Cirujano() : Persona(nombre = "", apellido = "", edad = 0, dni = 0) {
     }
 
     override fun cirugia() {
-        println("El cirujano ${this.nombre} ${this.apellido} va a hacer una cirugía.")
+        println("El cirujano ${this.nombre} ${this.apellido} está listo para cualquier cirugía.")
     }
 }
