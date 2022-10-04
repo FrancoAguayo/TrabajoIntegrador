@@ -5,6 +5,7 @@ fun main() {
     var paciente1 = Paciente("","",0,0,0.0,0.0,"")
     var medico1 = Medico("","",0,0,0,"")
     var cirujano1= Cirujano("","",0,0,"")
+    var tratamiento1= Tratamiento(paciente1)
     println("Ingresa el nombre del paciente.")
     paciente1.nombre=read.next()
     println("Ingresa el apellido del paciente.")
@@ -20,7 +21,9 @@ fun main() {
     println("Ingresa el diagnóstico del paciente.")
     paciente1.diagnostico=read.next()
     println("***********************************")
+    paciente1.asistirAlCentro()
     println(paciente1)
+    paciente1.tratamiento()
     println("Ingrese el nombre del médico.")
     medico1.nombre=read.next()
     println("Ingrese el apellido del médico.")
@@ -44,4 +47,10 @@ fun main() {
     cirujano1.dni=read.nextInt()
     println("Ingrese la operación a ejecutar del cirujano.")
     cirujano1.operacion=read.next()
+    if(paciente1.diagnostico=="apendicitis"){
+        tratamiento1.tratamiento("Repsoso",3,true)
+    }
+    else{
+        tratamiento1.tratamiento("Farmacoterapia",18)
+    }
 }

@@ -11,14 +11,15 @@ class Tratamiento {
         this.paciente = paciente
     }
 
-    fun tratamiento(tipoTratamiento: String, duracion: Int) : String{
-        return ("El paciente está haciendo un tratamiento de tipo $tipoTratamiento.")
+    fun tratamiento(tipoTratamiento: String, duracion: Int){
+        println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento con duracion de $duracion meses.")
     }
-    fun tratamiento(tipoTratamiento: String,duracion: Int,requiereCirugia: Boolean): String{
-        return ("El paciente está haciendo un tratamiento de tipo $tipoTratamiento involucró una cirugía urgente.")
+    fun tratamiento(tipoTratamiento: String,duracion: Int,requiereCirugia: Boolean){
+        println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento que involucró una cirugía urgente la" +
+                " cual duró $duracion horas.")
     }
-    fun tratamiento(tipoTratamiento: String,duracion: Int,frecuenciaMedicacion: Int): String{
-        return ("El paciente está haciendo un tratamiento de tipo $tipoTratamiento que involucra una medicación." +
-                "La medicacion se toma cada $frecuenciaMedicacion horas.")
+    fun tratamiento(tipoTratamiento: String,duracion: Int,frecuenciaMedicacion: Int){
+        println("El paciente está haciendo un tratamiento de tipo $tipoTratamiento que involucra una medicación." +
+                "La medicacion se toma cada $frecuenciaMedicacion horas por $duracion meses.")
     }
 }
