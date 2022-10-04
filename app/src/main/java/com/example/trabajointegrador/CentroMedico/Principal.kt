@@ -7,7 +7,9 @@ fun main() {
     var cirujano1= Cirujano("","",0,0,"")
     var paciente2 = Paciente("Daniel","Hernandez",34,
         45272572,56.8,1.54,"Bronquiolitis")
+    var paciente3 = Paciente("Valentin","Lopez",44,34571298,57.3,1.59,"Corazon defectuoso")
     var tratamiento2= Tratamiento(paciente2)
+    var tratamiento3= Tratamiento(paciente3)
     println("Ingresa el nombre del paciente.")
     paciente1.nombre=read.next()
     println("Ingresa el apellido del paciente.")
@@ -55,4 +57,5 @@ fun main() {
     cirujano1.cirugia()
     println("************************************")
     tratamiento2.tratamiento("Terapia Intesiva",6)
+    tratamiento3.tratamiento("Reposo",9,"Transplante")
 }
